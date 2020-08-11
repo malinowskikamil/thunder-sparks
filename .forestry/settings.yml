@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/data/team.yml
   label: Team
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
