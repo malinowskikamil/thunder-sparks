@@ -33,3 +33,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- team.md
