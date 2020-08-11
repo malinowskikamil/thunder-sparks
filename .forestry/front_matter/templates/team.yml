@@ -36,3 +36,5 @@ fields:
   config:
     required: false
   label: Linkedin link
+pages:
+- content/team/Hans Desjarlais.md
