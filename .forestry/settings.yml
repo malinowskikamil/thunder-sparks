@@ -15,10 +15,10 @@ sections:
   templates:
   - blog-post
 - type: directory
-  path: ''
+  path: content/team
   label: Team
   create: all
-  match: content/data/team.yml
+  match: "**/*"
   templates:
   - team
 - type: document
