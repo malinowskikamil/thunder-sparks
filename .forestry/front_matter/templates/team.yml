@@ -26,3 +26,13 @@ fields:
     schema:
       format: markdown
   label: Short description
+- name: facebook_link
+  type: text
+  config:
+    required: false
+  label: Facebook link
+- name: linkedin_link
+  type: text
+  config:
+    required: false
+  label: Linkedin link
