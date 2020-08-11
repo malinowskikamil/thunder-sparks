@@ -26,10 +26,3 @@ fields:
     schema:
       format: markdown
   label: Short description
-- name: social_links
-  type: blocks
-  label: Social links
-  template_types: []
-  config:
-    min: 
-    max: 
