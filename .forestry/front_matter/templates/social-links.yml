@@ -27,3 +27,5 @@ fields:
   config:
     required: false
   label: instagram
+pages:
+- content/social_icons/social_icons.md
