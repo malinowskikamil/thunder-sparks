@@ -6,6 +6,15 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: heading
+  label: Home
+- type: directory
+  path: content/home
+  label: Hero
+  create: all
+  match: "**/*"
+  templates:
+  - homepage
 - type: directory
   path: content/posts
   label: Blog Posts
