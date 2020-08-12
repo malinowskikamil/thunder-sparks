@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  &.stacked {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    .header__nav {
+      .nav_link {
+        color: #47525d;
+      }
+    }
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav_link {
+      color: #fff;
+      padding: 10px 15px;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+  }
+}
