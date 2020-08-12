@@ -16,6 +16,13 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: content/social_icons
+  label: Social icons
+  create: all
+  match: "**/*"
+  templates:
+  - social-links
+- type: directory
   path: content/posts
   label: Blog Posts
   create: documents
