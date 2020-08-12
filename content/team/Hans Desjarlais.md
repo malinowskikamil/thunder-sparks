@@ -1,5 +1,5 @@
 ---
-name: Hans Desjarlais
+name: Bartosz Maziarz
 image: "/content/images/team1.jpg"
 position: FOUNDER & CEO
 short_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
