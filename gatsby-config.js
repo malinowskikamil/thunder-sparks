@@ -30,11 +30,19 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "home",
         path: `${__dirname}/content/home`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "social_icons",
+        path: `${__dirname}/content/social_icons/social_icons.md`,
       },
     },
     {
