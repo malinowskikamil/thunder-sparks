@@ -6,7 +6,7 @@ export default function IndexPage() {
   return (
     <Layout page="home" bgColor="inherit">
       <section>
-        <BlogList />
+        {/* <BlogList /> */}
       </section>
     </Layout>
   )

@@ -13,7 +13,7 @@ export default function Blog(props) {
 
   function getNextSlug(slug) {
     const allSlugs = allBlogData.map(blog => {
-      return blog.node.fields.slug
+      return blog.node.childMarkdownRemark.fields.slug
     })
     const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
     if(nextSlug !== undefined && nextSlug !== '') {
@@ -67,15 +67,16 @@ export const getPostData = graphql`
         title
         author
         date(formatString: "MMMM Do, YYYY")
-        hero_image {
-          childImageSharp {
-            fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+
       }
       html
     }
   }
 `
+        // hero_image {
+        //   childImageSharp {
+        //     fluid(maxWidth: 1500) {
+        //       ...GatsbyImageSharpFluid
+        //     }
+        //   }
+        // }

@@ -2,31 +2,37 @@ import { graphql, useStaticQuery } from "gatsby"
 
 export default function useBlogData() {
   const data = useStaticQuery(graphql`
-    query getBlogData {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+    {
+      allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
         edges {
           node {
-            id
-            frontmatter {
-              date(formatString: "MMMM Do, YYYY")
-              author
-              title
-              hero_image {
-                childImageSharp {
-                  fluid( maxWidth: 800 ) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+            childMarkdownRemark {
+              id
+              frontmatter {
+                date(formatString: "MMMM Do, YYYY")
+                author
+                title
+         
+                short_description
               }
-            }
-            excerpt(pruneLength: 200)
-            fields {
-              slug
+              excerpt(pruneLength: 200)
+              fields {
+                slug
+              }
             }
           }
         }
       }
     }
   `)
-  return data.allMarkdownRemark.edges
+  return data.allFile.edges
 }
+
+
+      //  hero_image {
+      //             childImageSharp {
+      //               fluid(maxWidth: 800) {
+      //                 ...GatsbyImageSharpFluid
+      //               }
+      //             }
+      //           }
