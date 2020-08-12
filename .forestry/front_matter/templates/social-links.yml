@@ -2,6 +2,16 @@
 label: Social Links
 hide_body: false
 fields:
+- name: phone
+  type: text
+  config:
+    required: false
+  label: phone
+- name: email
+  type: text
+  config:
+    required: false
+  label: email
 - name: facebook
   type: text
   config:
