@@ -1,4 +1,19 @@
 ---
 label: Social Links
 hide_body: false
-fields: []
+fields:
+- name: facebook
+  type: text
+  config:
+    required: false
+  label: facebook
+- name: linkedin
+  type: text
+  config:
+    required: false
+  label: linkedin
+- name: instagram
+  type: text
+  config:
+    required: false
+  label: instagram
