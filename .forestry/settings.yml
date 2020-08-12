@@ -8,13 +8,6 @@ sections:
   label: Home
 - type: directory
   path: content/home
-  label: About
-  create: all
-  match: "**/*"
-  templates:
-  - about
-- type: directory
-  path: content/home
   label: Hero
   create: all
   match: "**/*"
