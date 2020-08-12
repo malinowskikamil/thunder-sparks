@@ -3,10 +3,10 @@ import { graphql, useStaticQuery } from "gatsby"
 export default function useHomeData() {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { sourceInstanceName: { eq: "home" } }) {
+      hero: allFile(filter: { sourceInstanceName: { eq: "hero" } }) {
         edges {
           node {
-            hero: childMarkdownRemark {
+            childMarkdownRemark {
               id
               frontmatter {
                 title
@@ -22,7 +22,24 @@ export default function useHomeData() {
           }
         }
       }
+      about: allFile(filter: { sourceInstanceName: { eq: "about" } }) {
+        edges {
+          node {
+            childMarkdownRemark {
+              id
+              frontmatter {
+                title
+                subtitle
+                description
+              }
+            }
+          }
+        }
+      }
     }
   `)
-  return data.allFile.edges
+  return {
+    hero: data.hero.edges[0].node.childMarkdownRemark.frontmatter,
+    about: data.about.edges[0].node.childMarkdownRemark.frontmatter,
+  }
 }

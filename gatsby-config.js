@@ -30,12 +30,18 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "home",
-        path: `${__dirname}/content/home`,
+        name: "hero",
+        path: `${__dirname}/content/home/thunder-sparks-ltd.md`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "about",
+        path: `${__dirname}/content/home/about-us.md`,
       },
     },
     {
