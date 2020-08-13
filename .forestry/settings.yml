@@ -8,7 +8,7 @@ sections:
   label: Home
 - type: directory
   path: content/home
-  label: Homepage posts
+  label: Home posts
   create: all
   match: "**/*"
   templates:
