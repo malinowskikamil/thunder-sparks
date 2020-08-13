@@ -2,6 +2,14 @@
   background-color: #fff;
   padding-bottom: 100px;
 }
+.container__lime {
+  background-color: rgba($color: #bfff00, $alpha: 0.8);
+  .header {
+    h2 {
+      color: #47525d;
+    }
+  }
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -26,8 +34,8 @@
   }
 }
 
-.description{
-  p{
+.description {
+  p {
     font-size: 16px;
     line-height: 27px;
   }

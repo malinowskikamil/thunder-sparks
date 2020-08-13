@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import BlogList from "../components/BlogList"
+import HomeBlogList from "../components/HomeBlogList"
 import HeroHeader from "../components/HeroHeader"
 import About from "../components/About"
 import SocialIcons from "../components/SocialIcons"
@@ -12,7 +12,7 @@ export default function IndexPage() {
       <SocialIcons />
       <main className={layoutStyles.index__main}>
         <About />
-        <BlogList />
+        <HomeBlogList />
       </main>
     </Layout>
   )
