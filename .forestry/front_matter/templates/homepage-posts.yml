@@ -1,4 +1,9 @@
 ---
 label: Homepage posts
 hide_body: true
-fields: []
+fields:
+- name: posts
+  type: include
+  config: {}
+  template: blog-post
+  label: posts
