@@ -10,7 +10,7 @@ fields:
     options: []
     source:
       type: pages
-      section: home-posts-8ef0f06c-0c53-46b9-a671-3751fbf97ec3
+      section: blog-posts
       file: 
       path: 
   label: posts
