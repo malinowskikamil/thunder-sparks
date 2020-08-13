@@ -9,9 +9,10 @@ export default function IndexPage() {
   return (
     <Layout page="home">
       <HeroHeader />
+      <SocialIcons />
       <main className={layoutStyles.index__main}>
         <About />
-        <SocialIcons />
+        <BlogList />
       </main>
     </Layout>
   )

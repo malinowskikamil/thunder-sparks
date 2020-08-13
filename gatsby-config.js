@@ -34,14 +34,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "hero",
-        path: `${__dirname}/content/home/thunder-sparks-ltd.md`,
+        path: `${__dirname}/content/home/hero.md`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "about",
-        path: `${__dirname}/content/home/about-us.md`,
+        path: `${__dirname}/content/home/about.md`,
       },
     },
     {

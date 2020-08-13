@@ -1,14 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import useBlogData from "../static_queries/useBlogData"
-import useTeamData from "../static_queries/useTeamData"
 import blogListStyles from "../styles/components/bloglist.module.scss"
 import Img from 'gatsby-image'
 
 export default function BlogList() {
   const blogData = useBlogData()
-  const teamData = useTeamData()
+console.log(blogData)
+
   function renderBlogData() {
+    return null
     return (
       <div>
         {blogData
