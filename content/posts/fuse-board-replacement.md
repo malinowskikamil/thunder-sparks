@@ -1,5 +1,5 @@
 ---
-date: 2020-08-12T17:34:47Z
+date: 2020-08-09T17:34:47Z
 hero_image: "/content/images/markus-spiske-kk7upfb2ywu-unsplash.jpg"
 title: Fuse Board Replacement
 author: Bartosz Maziarz
