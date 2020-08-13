@@ -8,13 +8,6 @@ sections:
   label: Home
 - type: directory
   path: content/home
-  label: Home posts
-  create: all
-  match: "**/*"
-  templates:
-  - homepage-posts
-- type: directory
-  path: content/home
   label: Hero
   create: all
   match: "**/*"
