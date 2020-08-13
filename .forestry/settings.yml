@@ -21,10 +21,10 @@ sections:
   templates:
   - about
 - type: directory
-  path: content/home/home_post
+  path: content/home
   label: Home posts
   create: all
-  match: "**/*"
+  match: home_post.md
   templates:
   - home-posts
 - type: heading
