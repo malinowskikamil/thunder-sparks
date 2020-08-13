@@ -44,6 +44,13 @@ module.exports = {
         path: `${__dirname}/content/home/about.md`,
       },
     },
+        {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "home_posts",
+        path: `${__dirname}/content/home/home_posts.md`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
