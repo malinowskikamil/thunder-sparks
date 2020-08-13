@@ -12,3 +12,5 @@ fields:
       type: pages
       section: blog-posts
   label: Post
+pages:
+- content/home/home_post/home_posts.md
