@@ -1,5 +1,5 @@
 ---
-date: 2020-08-13T17:40:23Z
+date: 2020-08-12T17:40:23Z
 hero_image: "/content/images/clint-patterson-exfrr9kkzle-unsplash.jpg"
 title: How to choose a good electrician?
 author: Bartosz Maziarz
