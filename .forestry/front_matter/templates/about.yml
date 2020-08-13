@@ -21,5 +21,3 @@ fields:
     schema:
       format: markdown
   label: description
-pages:
-- content/home/about-us.md
