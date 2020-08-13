@@ -13,6 +13,13 @@ sections:
   match: hero.md
   templates:
   - hero
+- type: directory
+  path: content/home
+  label: About
+  create: all
+  match: about.md
+  templates:
+  - about
 - type: heading
   label: Content
 - type: directory
