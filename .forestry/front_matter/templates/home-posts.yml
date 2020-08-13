@@ -2,17 +2,13 @@
 label: Home posts
 hide_body: true
 fields:
-- name: posts
-  type: select
-  default: []
+- name: post
+  type: list
   config:
-    required: false
-    options: []
+    use_select: true
+    min: 
+    max: 
     source:
       type: pages
       section: blog-posts
-      file: 
-      path: 
-  label: posts
-pages:
-- content/home/first_post.md
+  label: Post
