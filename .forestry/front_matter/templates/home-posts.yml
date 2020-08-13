@@ -3,9 +3,14 @@ label: Home posts
 hide_body: true
 fields:
 - name: posts
-  type: field_group_list
+  type: select
+  default: []
   config:
-    min: 
-    max: 
-    labelField: 
+    required: false
+    options: []
+    source:
+      type: pages
+      section: home-posts-8ef0f06c-0c53-46b9-a671-3751fbf97ec3
+      file: 
+      path: 
   label: posts
