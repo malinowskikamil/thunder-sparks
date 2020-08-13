@@ -15,33 +15,38 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-// module.exports.createPages = async ({ graphql, actions }) => {
-//   const { createPage } = actions
-//   //dynamically create pages here
-//   //get path to template
-//   const blogTemplate = path.resolve("./src/templates/blog.js")
-//   //get slugs
-//   const response = await graphql(`
-//     query {
-//       allMarkdownRemark {
-//         edges {
-//           node {
-//             fields {
-//               slug
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   //create new pages with unique slug
-//   response.data.allMarkdownRemark.edges.forEach(edge => {
-//     createPage({
-//       component: blogTemplate,
-//       path: `/blog/${edge.node.fields.slug}`,
-//       context: {
-//         slug: edge.node.fields.slug,
-//       },
-//     })
-//   })
-// }
+module.exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  //dynamically create pages here
+  //get path to template
+  const blogTemplate = path.resolve("./src/templates/blog.js")
+  //get slugs
+  const response = await graphql(`
+    {
+      allFile(
+        sort: { order: DESC, fields: childMarkdownRemark___frontmatter___date }
+        filter: { sourceInstanceName: { eq: "posts" } }
+      ) {
+        edges {
+          node {
+            childMarkdownRemark {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  //create new pages with unique slug
+  response.data.allFile.edges.forEach(edge => {
+    createPage({
+      component: blogTemplate,
+      path: `/blog/${edge.node.childMarkdownRemark.fields.slug}`,
+      context: {
+        slug: edge.node.childMarkdownRemark.fields.slug,
+      },
+    })
+  })
+}

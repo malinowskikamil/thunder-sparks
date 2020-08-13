@@ -29,10 +29,7 @@ const Header = ({ page }) => {
         </Link>
       </div>
       <nav className={`${headerStyles.header__nav}`}>
-        <Link to="/blog" className={`${headerStyles.nav_link}`}>
-          Blog
-        </Link>
-        {page === "home" && (
+        {page === "home" ? (
           <>
             <AnchorLink
               className={`${headerStyles.nav_link}`}
@@ -50,7 +47,14 @@ const Header = ({ page }) => {
               title="Team"
             />
           </>
+        ) : (
+          <Link to="/" className={`${headerStyles.nav_link}`}>
+            Home
+          </Link>
         )}
+        <Link to="/blog" className={`${headerStyles.nav_link}`}>
+          Blog
+        </Link>
       </nav>
     </div>
   )
