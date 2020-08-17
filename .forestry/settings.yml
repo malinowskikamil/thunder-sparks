@@ -24,7 +24,7 @@ sections:
   path: ''
   label: Gallery
   create: all
-  match: content/home/gallery
+  match: content/home/gallery.md
   templates:
   - gallery
 - type: heading
