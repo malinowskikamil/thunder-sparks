@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: Caption
+pages:
+- content/home/gallery/wires.md
