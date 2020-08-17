@@ -13,4 +13,7 @@ fields:
     required: false
   label: Caption
 pages:
+- content/home/gallery/ecc.md
+- content/home/gallery/fuse_board.md
+- content/home/gallery/solar1.md
 - content/home/gallery/wires.md
