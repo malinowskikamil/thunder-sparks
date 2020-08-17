@@ -36,10 +36,33 @@ export default function useHomeData() {
           }
         }
       }
+      gallery: allFile(filter: { sourceInstanceName: { eq: "gallery" } }) {
+        edges {
+          node {
+            childMarkdownRemark {
+              id
+              frontmatter {
+                caption
+                image {
+                  childImageSharp {
+                    full: fluid(maxWidth: 2000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                    thumbnail: fluid(maxWidth: 500) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   `)
   return {
     hero: data.hero.edges[0].node.childMarkdownRemark.frontmatter,
     about: data.about.edges[0].node.childMarkdownRemark.frontmatter,
+    gallery: data.gallery.edges,
   }
 }

@@ -1,0 +1,24 @@
+.gallery {
+  &_container {
+    & > div {
+      display: flex;
+      flex-flow: wrap;
+    }
+  }
+  &_item {
+    flex-basis: 25%;
+    max-width: 25%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      vertical-align: middle;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+}
