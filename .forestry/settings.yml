@@ -21,10 +21,10 @@ sections:
   templates:
   - about
 - type: directory
-  path: ''
+  path: content/home
   label: Gallery
   create: all
-  match: content/home/gallery.md
+  match: gallery.md
   templates:
   - gallery
 - type: heading
