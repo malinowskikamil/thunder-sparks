@@ -20,6 +20,13 @@ sections:
   match: about.md
   templates:
   - about
+- type: directory
+  path: ''
+  label: Gallery
+  create: all
+  match: content/home/gallery
+  templates:
+  - gallery
 - type: heading
   label: Content
 - type: directory
