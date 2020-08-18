@@ -8,7 +8,7 @@ const About = () => {
   } = useHomeData()
 
   return (
-    <div className={`${layoutStyles.container}`}>
+    <div className={`${layoutStyles.container}`} id="about">
       <div className={`${layoutStyles.header}`}>
         {title && <h2>{title}</h2>}
         {subtitle && <p className={`${layoutStyles.subtitle}`}>{subtitle}</p>}

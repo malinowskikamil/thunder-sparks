@@ -25,4 +25,16 @@
       }
     }
   }
+  @media screen and (max-width: 650px) {
+    &__panel {
+      padding: 10px;
+    }
+    &__link {
+      margin: 0 5px;
+      padding: 5px;
+      svg {
+        width: 20px;
+      }
+    }
+  }
 }

@@ -21,4 +21,26 @@
       margin: 0;
     }
   }
+  @media screen and (max-width: 1300px) {
+    &_item {
+      height: 230px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    &_item {
+      flex-basis: 33.333%;
+      max-width: 33.333%;
+    }
+  }
+  @media screen and (max-width: 730px) {
+    &_item {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    &_item {
+      height: 150px;
+    }
+  }
 }

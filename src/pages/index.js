@@ -5,6 +5,7 @@ import HeroHeader from "../components/HeroHeader"
 import About from "../components/About"
 import SocialIcons from "../components/SocialIcons"
 import Gallery from "../components/Gallery"
+import Team from "../components/Team"
 import layoutStyles from "../styles/components/layout.module.scss"
 import SimpleReactLightbox from "simple-react-lightbox"
 
@@ -19,6 +20,7 @@ export default function IndexPage() {
         <SimpleReactLightbox>
           <Gallery />
         </SimpleReactLightbox>
+        <Team />
       </main>
     </Layout>
   )

@@ -8,13 +8,18 @@ export default function useTeamData() {
           node {
             childMarkdownRemark {
               frontmatter {
-                author
                 facebook_link
                 linkedin_link
                 name
                 position
                 short_description
-                title
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 700) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }

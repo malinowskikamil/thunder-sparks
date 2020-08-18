@@ -46,7 +46,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className={`${galeryStyles.gallery_container}`}>
+    <div className={`${galeryStyles.gallery_container}`} id="gallery">
       <SRLWrapper options={options}>
         {images.map(({ caption, id, src, thumbnail }) => (
           <a

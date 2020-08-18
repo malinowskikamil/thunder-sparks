@@ -36,15 +36,20 @@ const Header = ({ page }) => {
               to="#about"
               title="About Us"
             />
-            <AnchorLink
+               <AnchorLink
               className={`${headerStyles.nav_link}`}
-              to="#contact"
-              title="Contact"
+              to="#gallery"
+              title="Gallery"
             />
             <AnchorLink
               className={`${headerStyles.nav_link}`}
               to="#team"
               title="Team"
+            />
+            <AnchorLink
+              className={`${headerStyles.nav_link}`}
+              to="#contact"
+              title="Contact"
             />
           </>
         ) : (
