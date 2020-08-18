@@ -13,6 +13,15 @@
     }
   }
 }
+.container__gray {
+  background-color: #47525d;
+  .header {
+    h2 {
+      color: #fff;
+    }
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

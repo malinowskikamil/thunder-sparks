@@ -6,7 +6,7 @@ import useTeamData from "../static_queries/useTeamData"
 const Team = () => {
   const data = useTeamData()
   return (
-    <div className={`${layoutStyles.container__lime}`}>
+    <div className={`${layoutStyles.container__lime}`} id="team">
       <div className={`${layoutStyles.container}`}>
         <div className={`${layoutStyles.header}`}>
           <h2>Our team</h2>
