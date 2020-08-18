@@ -4,6 +4,7 @@ import contactStyles from "../styles/components/contact.module.scss"
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as Yup from "yup"
 import qs from "query-string"
+import axios from "axios"
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Required"),
@@ -23,6 +24,7 @@ const ContactForm = () => {
         </div>
         <div className={`${contactStyles.form__container}`}>
           <Formik
+            dataNetlify="true"
             initialValues={{
               name: "",
               email: "",
