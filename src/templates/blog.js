@@ -1,10 +1,10 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import useBlogData from "../static_queries/useBlogData"
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 import layoutStyles from "../styles/components/layout.module.scss"
-//this component handles the blur img & fade-ins
 
 export default function Blog(props) {
   const data = props.data.markdownRemark
@@ -37,6 +37,7 @@ export default function Blog(props) {
 
   return (
     <Layout>
+      <Helmet title={`${data.frontmatter.title} - Thunder Sparks`} />
       <article className={blogTemplateStyles.blog}>
         <div
           className={blogTemplateStyles.blog__hero}

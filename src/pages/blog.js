@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from 'react-helmet'
 import Layout from "../components/Layout"
 import SocialIcons from "../components/SocialIcons"
 import { Link, StaticQuery, graphql } from "gatsby"
@@ -7,6 +8,7 @@ import blogListStyles from "../styles/components/bloglist.module.scss"
 const BlogList = ({ data }) => {
   return (
     <Layout page="blog">
+    <Helmet title={'Blog - Thunder Sparks'} />
       <SocialIcons />
       <main className={`${blogListStyles.blog_container}`}>
         <div className={`${layoutStyles.container}`}>
