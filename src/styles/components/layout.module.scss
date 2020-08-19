@@ -1,8 +1,5 @@
 .index__main {
   background-color: #fff;
-  @media screen and (max-width: 650px) {
-    padding-bottom: 60px;
-  }
 }
 .container__lime {
   background-color: rgba($color: #bfff00, $alpha: 0.8);
@@ -52,12 +49,11 @@
   }
 }
 
-
 @media screen and (max-width: 650px) {
   .container {
     padding: 40px 15px;
   }
-  
+
   .header {
     margin-bottom: 20px;
     h2 {
@@ -69,7 +65,7 @@
       line-height: 22px;
     }
   }
-  
+
   .description {
     p {
       font-size: 14px;
