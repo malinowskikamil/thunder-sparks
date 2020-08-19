@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react"
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 import headerStyles from "../styles/components/header.module.scss"
 
 const Header = ({ page }) => {
@@ -48,25 +48,36 @@ const Header = ({ page }) => {
         {page === "home" ? (
           <>
             <AnchorLink
+              offset="20"
+              onClick={() => setActive(false)}
               className={`${headerStyles.nav_link}`}
-              to="#about"
-              title="About Us"
-            />
+              href="#about"
+            >
+              About Us
+            </AnchorLink>
             <AnchorLink
+              onClick={() => setActive(false)}
               className={`${headerStyles.nav_link}`}
-              to="#gallery"
-              title="Gallery"
-            />
+              href="#gallery"
+            >
+              Gallery
+            </AnchorLink>
             <AnchorLink
+              offset="20"
+              onClick={() => setActive(false)}
               className={`${headerStyles.nav_link}`}
-              to="#team"
-              title="Team"
-            />
+              href="#team"
+            >
+              Team
+            </AnchorLink>
             <AnchorLink
+              offset="20"
+              onClick={() => setActive(false)}
               className={`${headerStyles.nav_link}`}
-              to="#contact"
-              title="Contact"
-            />
+              href="#contact"
+            >
+              Contact
+            </AnchorLink>
           </>
         ) : (
           <Link to="/" className={`${headerStyles.nav_link}`}>
