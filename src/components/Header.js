@@ -1,10 +1,14 @@
 import React, { useEffect, useState, useRef } from "react"
 import { Link } from "gatsby"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import headerStyles from "../styles/components/header.module.scss"
+import useSocialIconsData from "../static_queries/useSocialIconsData"
+import useLogoData from "../static_queries/useLogoData"
 
 const Header = ({ page }) => {
   const el = useRef(null)
+  const { phone } = useSocialIconsData()
+  const { logo } = useLogoData()
+  console.log(logo)
   const [offset, setOffset] = useState(false)
   const [active, setActive] = useState(false)
   const handleScroll = event => {
@@ -25,9 +29,11 @@ const Header = ({ page }) => {
       } `}
     >
       <div className={`${headerStyles.header__logo}`}>
-        <Link to="/" className={`${headerStyles.header__logo__holder}`}>
-          Logo
-        </Link>
+        {logo && (
+          <Link to="/" className={`${headerStyles.header__logo__holder}`}>
+            <img src={logo.url} alt="Logo" />
+          </Link>
+        )}
       </div>
       <button
         onClick={() => setActive(!active)}
@@ -45,41 +51,7 @@ const Header = ({ page }) => {
           active ? headerStyles.active : ""
         }`}
       >
-        {page === "home" ? (
-          <>
-            <AnchorLink
-              offset="20"
-              onClick={() => setActive(false)}
-              className={`${headerStyles.nav_link}`}
-              href="#about"
-            >
-              About Us
-            </AnchorLink>
-            <AnchorLink
-              onClick={() => setActive(false)}
-              className={`${headerStyles.nav_link}`}
-              href="#gallery"
-            >
-              Gallery
-            </AnchorLink>
-            <AnchorLink
-              offset="20"
-              onClick={() => setActive(false)}
-              className={`${headerStyles.nav_link}`}
-              href="#team"
-            >
-              Team
-            </AnchorLink>
-            <AnchorLink
-              offset="20"
-              onClick={() => setActive(false)}
-              className={`${headerStyles.nav_link}`}
-              href="#contact"
-            >
-              Contact
-            </AnchorLink>
-          </>
-        ) : (
+        {page !== "home" && (
           <Link to="/" className={`${headerStyles.nav_link}`}>
             Home
           </Link>
@@ -87,6 +59,11 @@ const Header = ({ page }) => {
         <Link to="/blog" className={`${headerStyles.nav_link}`}>
           Blog
         </Link>
+        {phone && (
+          <a href={`tel:${phone}`} className={`${headerStyles.nav_link}`}>
+            {phone}
+          </a>
+        )}
       </nav>
     </div>
   )

@@ -10,6 +10,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px 50px;
+    &__logo{
+      &__holder{
+        img{
+          max-width: 50px;
+          margin: 0;
+        }
+      }
+    }
     .hamburger {
       display: none;
     }
@@ -47,6 +55,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__logo{
+      &__holder{
+        img{
+          max-width: 50px;
+          margin: 0;
+        }
+      }
+    }
     .hamburger {
       border: none;
       position: relative;

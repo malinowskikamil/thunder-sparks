@@ -24,12 +24,12 @@
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
       color: #fff;
     }
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 650px) {
       padding: 20px;
       text-align: center;
-      h1{
+      h1 {
         font-size: 40px;
-      line-height: 50px;
+        line-height: 50px;
       }
     }
   }
@@ -43,5 +43,34 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+.social_icons {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+  }
+  &__link {
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+    svg {
+      width: 30px;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  @media screen and (max-width: 650px) {
+    &__link {
+      margin: 0 5px;
+      padding: 5px;
+      svg {
+        width: 25px;
+      }
+    }
   }
 }
