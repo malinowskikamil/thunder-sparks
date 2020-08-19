@@ -9,9 +9,7 @@ import axios from "axios"
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Required"),
   message: Yup.string().required("Required"),
-  email: Yup.string()
-    .email("Invalid email")
-    .required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
 })
 
 const ContactForm = () => {
@@ -24,7 +22,6 @@ const ContactForm = () => {
         </div>
         <div className={`${contactStyles.form__container}`}>
           <Formik
-            dataNetlify="true"
             initialValues={{
               name: "",
               email: "",
@@ -33,7 +30,7 @@ const ContactForm = () => {
               is_bot: false,
             }}
             validationSchema={SignupSchema}
-            onSubmit={async values => {
+            onSubmit={async (values) => {
               if (values.is_bot) return false
               const options = {
                 method: "POST",
@@ -53,7 +50,7 @@ const ContactForm = () => {
             }}
           >
             {({ errors, touched }) => (
-              <Form>
+              <form name="contact" method="post" data-netlify="true">
                 <Field
                   name="is_bot"
                   type="checkbox"
@@ -94,7 +91,7 @@ const ContactForm = () => {
                     Success! Message sent!
                   </p>
                 )}
-              </Form>
+              </form>
             )}
           </Formik>
         </div>
