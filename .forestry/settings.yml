@@ -29,6 +29,11 @@ sections:
   - gallery
 - type: heading
   label: Content
+- type: document
+  path: content/logo.md
+  label: Logo
+  match: "**/*"
+  read_only: false
 - type: directory
   path: content/social_icons
   label: Social icons
