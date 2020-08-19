@@ -32,6 +32,7 @@ const ContactForm = () => {
             validationSchema={SignupSchema}
             onSubmit={async (values) => {
               if (values.is_bot) return false
+              delete values.is_bot
               const options = {
                 method: "POST",
                 headers: {
