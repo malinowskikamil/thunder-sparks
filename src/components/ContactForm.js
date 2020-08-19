@@ -9,13 +9,15 @@ import axios from "axios"
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Required"),
   message: Yup.string().required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
+  email: Yup.string()
+    .email("Invalid email")
+    .required("Required"),
 })
 
 const ContactForm = () => {
   const [is_success, setSuccess] = useState(false)
   return (
-    <div className={`${layoutStyles.container__gray}`}>
+    <div className={`${layoutStyles.container__gray}`} id="contact">
       <div className={`${layoutStyles.container}`}>
         <div className={`${layoutStyles.header}`}>
           <h2>Contact</h2>
@@ -30,9 +32,8 @@ const ContactForm = () => {
               is_bot: false,
             }}
             validationSchema={SignupSchema}
-            onSubmit={async (values) => {
+            onSubmit={async values => {
               if (values.is_bot) return false
-              delete values.is_bot
               const options = {
                 method: "POST",
                 headers: {
@@ -47,7 +48,6 @@ const ContactForm = () => {
               } catch (e) {
                 console.log(e)
               }
-              // same shape as initial values
             }}
           >
             {({ errors, touched }) => (

@@ -6,6 +6,7 @@ import headerStyles from "../styles/components/header.module.scss"
 const Header = ({ page }) => {
   const el = useRef(null)
   const [offset, setOffset] = useState(false)
+  const [active, setActive] = useState(false)
   const handleScroll = event => {
     setOffset(window.scrollY > window.innerHeight - el.current.clientHeight)
   }
@@ -20,7 +21,7 @@ const Header = ({ page }) => {
     <div
       ref={el}
       className={`${headerStyles.header} ${
-        offset ? headerStyles.stacked : ""
+        offset || page !== "home" ? headerStyles.stacked : ""
       } `}
     >
       <div className={`${headerStyles.header__logo}`}>
@@ -28,7 +29,22 @@ const Header = ({ page }) => {
           Logo
         </Link>
       </div>
-      <nav className={`${headerStyles.header__nav}`}>
+      <button
+        onClick={() => setActive(!active)}
+        type="button"
+        className={`${headerStyles.hamburger} ${
+          active ? headerStyles.active : ""
+        }`}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      <nav
+        className={`${headerStyles.header__nav} ${
+          active ? headerStyles.active : ""
+        }`}
+      >
         {page === "home" ? (
           <>
             <AnchorLink
@@ -36,7 +52,7 @@ const Header = ({ page }) => {
               to="#about"
               title="About Us"
             />
-               <AnchorLink
+            <AnchorLink
               className={`${headerStyles.nav_link}`}
               to="#gallery"
               title="Gallery"
