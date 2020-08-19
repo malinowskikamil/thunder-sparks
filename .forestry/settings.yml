@@ -29,11 +29,13 @@ sections:
   - gallery
 - type: heading
   label: Content
-- type: document
-  path: content/logo.md
+- type: directory
+  path: content
   label: Logo
-  match: "**/*"
-  read_only: false
+  create: all
+  match: logo.md
+  templates:
+  - logo
 - type: directory
   path: content/social_icons
   label: Social icons
