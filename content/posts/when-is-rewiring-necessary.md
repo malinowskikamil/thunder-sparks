@@ -1,8 +1,8 @@
 ---
-date: 2020-08-04T17:37:17Z
+date: 2020-08-04T17:37:17.000+00:00
 hero_image: "/content/images/steve-johnson-hokontrhiaq-unsplash.jpg"
 title: When is Rewiring Necessary?
-author: Bartosz Maziarz
+author: PodPoint
 
 ---
 * If a property has not already been rewired within the last 25-30 years, the chances are it will need upgrading at least in part in order to bring it up to current standards. The wiring may be potentially dangerous and may not be able to cope with the demands of modern living.
