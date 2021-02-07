@@ -2,7 +2,7 @@
 date: 
 hero_image: "/content/images/chuttersnap-xjlshl0hiik-unsplash.jpg"
 title: Charging an Electric Car at home
-author: Bartosz Maziarz
+author: PodPoint
 
 ---
 You can charge an electric car at home using a dedicated home charging point (a standard 3 pin plug with an EVSE cable should only be used as a last resort).
