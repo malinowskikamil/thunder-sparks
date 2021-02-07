@@ -1,5 +1,5 @@
 ---
-date: 2020-08-13T17:30:52.000+00:00
+date: 
 hero_image: "/content/images/chuttersnap-xjlshl0hiik-unsplash.jpg"
 title: Charging an Electric Car at home
 author: Bartosz Maziarz
