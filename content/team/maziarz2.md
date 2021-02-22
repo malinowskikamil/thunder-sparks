@@ -1,6 +1,6 @@
 ---
 name: Bartosz Maziarz
-image: "/content/images/zane-lee-zew4fhh2ijw-unsplash.jpg"
+image: "/content/images/profil-bart.jpg"
 position: FOUNDER & CEO
 short_description: Lorem ipsum dolor sit amet
 facebook_link: https://www.facebook.com/bartosz.maziarz.1
