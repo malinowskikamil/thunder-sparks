@@ -1,4 +1,4 @@
 ---
-logo: "/content/images/117943307_323359632119953_2024420867675396463_n.png"
+logo: "/content/images/thunder-sparks-logo-2021.gif"
 
 ---
