@@ -1,8 +1,8 @@
 ---
-date: 2020-08-12T17:40:23Z
+date: 2020-08-12T17:40:23.000+00:00
 hero_image: "/content/images/clint-patterson-exfrr9kkzle-unsplash.jpg"
 title: How to choose a good electrician?
-author: Bartosz Maziarz
+author: PodPoint
 
 ---
 Many of us consider the visible things in our homes to be the most important - we value our TVs, games consoles and comfy sofas, yet some of the most important and vital components that make up a home aren’t immediately visible.
@@ -23,7 +23,7 @@ Not convinced? See below for more great reasons to always choose a registered el
 * They work to the BS7671 safety standard
 * Their work is regularly assessed
 * They’re insured, so you’re protected
-* It’s a legal requirement for [certain electrical work](https://www.electricalsafetyfirst.org.uk/find-an-electrician/part-p/)
+* It’s a legal requirement for certain electrical work
 
 **What should you do when choosing an electrician?**
 
