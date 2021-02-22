@@ -7,7 +7,7 @@ author: PodPoint
 ---
 * If a property has not already been rewired within the last 25-30 years, the chances are it will need upgrading at least in part in order to bring it up to current standards. The wiring may be potentially dangerous and may not be able to cope with the demands of modern living.
 * If you plan major remodeling work that constitutes a material alteration as defined by the Building Regulations, it is likely that you will need to rewire part, if not all, of the property, including upgrading the consumer unit (fuse box).
-* If you are extending your home, or converting an attic or garage, this will constitute new work and therefore all of the new wiring will have to conform to [Part P: Electrical Safety](https://www.gov.uk/government/publications/electrical-safety-approved-document-p), and all existing wiring will have to be improved to ensure that it is able to carry the additional loads safely, it is earthed to current requirements and that [cross bonding](https://www.homebuilding.co.uk/rewiring-explained#crossbonding) is satisfactory.
+* If you are extending your home, or converting an attic or garage, this will constitute new work and therefore all of the new wiring will have to conform to Part P: Electrical Safety, and all existing wiring will have to be improved to ensure that it is able to carry the additional loads safely, it is earthed to current requirements and that cross bonding is satisfactory.
 * Where you are extending or remodeling, the rest of the existing wiring does not have to be upgraded, except where upgrading is required by the energy efficiency requirements of the Building Regulations, i.e. central heating controls.
 
 **How to Tell if Your Property has Been Rewired**
@@ -37,7 +37,7 @@ If you proceed with the project, then before exchanging contracts you can arrang
 
 **Rewiring work**
 
-If rewiring work is required, it should be undertaken at first fix stage (before plastering), at the same time as any central heating and plumbing work. New cabling cannot be surface mounted and so the installation will involve lifting the floor coverings and floorboards and possibly the [skirting boards](https://www.homebuilding.co.uk/how-to-fit-skirting-boards) too, routing out channels in the walls and possibly in some ceilings that are inaccessible from above. All of this work will cause major disruption and so it is best not to try and live around the work if possible.
+If rewiring work is required, it should be undertaken at first fix stage (before plastering), at the same time as any central heating and plumbing work. New cabling cannot be surface mounted and so the installation will involve lifting the floor coverings and floorboards and possibly the skirting boards too, routing out channels in the walls and possibly in some ceilings that are inaccessible from above. All of this work will cause major disruption and so it is best not to try and live around the work if possible.
 
 As well as installing new cabling, first fix stage will involve fitting new back boxes for all sockets and switches. In addition to rewiring for all power and lighting circuits, it is a good opportunity to rewire for modern central heating controls, alarms, smoke detectors and doorbells, to add outdoor lighting and sockets, and to rewire the telephones and television aerial sockets. It is also worth redesigning the wiring plan for sockets and switches to make sure it meets your needs and those of modern house buyers.
 
@@ -47,4 +47,4 @@ If the mains connection and meter needs moving, this will have to be undertaken 
 
 Once the first fix stage has been completed, the property can be re-plastered or the walls and ceilings filled and made good, and the flooring replaced. The second fix work can then proceed fitting sockets and switch plates, light fittings, the consumer unit and wiring any electric fans, cookers, extractor hoods, electric showers and the immersion heater, if there is a hot water storage cylinder.
 
-If you are working on a period building using [vernacular](https://www.homebuilding.co.uk/vernacular-style) materials, such as oak frame, cob or solid stonework, make sure your electrician is aware of this and has worked on such buildings.
+If you are working on a period building using vernacular materials, such as oak frame, cob or solid stonework, make sure your electrician is aware of this and has worked on such buildings.
