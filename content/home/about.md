@@ -1,6 +1,6 @@
 ---
 title: About
-subtitle: " "
+subtitle: " THUNDER SPARKS"
 description: ''
 
 ---
