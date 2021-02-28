@@ -1,6 +1,6 @@
 ---
 title: About
 subtitle: " THUNDER SPARKS"
-description: ''
+description: THUNDER
 
 ---
